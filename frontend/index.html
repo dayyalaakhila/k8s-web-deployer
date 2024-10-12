@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <title>Classy App</title>
+    <style>
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-header, .card-body {
+            border-radius: 10px;
+        }
+        .btn-primary, .btn-success {
+            background: linear-gradient(145deg, #3b5998, #8b9dc3);
+            border: none;
+            transition: background 0.3s;
+        }
+        .btn-primary:hover, .btn-success:hover {
+            background: linear-gradient(145deg, #8b9dc3, #3b5998);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h1 class="display-4">Assignment 1</h1>
+            <p class="lead">Akhila Dayyala C0911186</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h3>Register User</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="register-form">
+                            <div class="form-group">
+                                <input type="text" id="username" class="form-control" placeholder="Username" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="password" class="form-control" placeholder="Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </form>
+                        <h5 class="mt-4 text-center">Users List</h5>
+                        <div id="users-list" class="list-group overflow-auto" style="max-height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header bg-success text-white text-center">
+                        <h3>Upload File</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="upload-form">
+                            <div class="form-group">
+                                <input type="file" id="file" class="form-control-file" required>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Upload</button>
+                        </form>
+                        <h5 class="mt-4 text-center">Uploaded Files</h5>
+                        <div id="files-list" class="list-group overflow-auto" style="max-height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

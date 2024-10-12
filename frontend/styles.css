@@ -1,0 +1,38 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Lora', serif;
+}
+
+h1, h3 {
+    color: #343a40;
+}
+
+.btn-primary, .btn-success {
+    background: linear-gradient(145deg, #3b5998, #8b9dc3);
+    border: none;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover, .btn-success:hover {
+    background: linear-gradient(145deg, #8b9dc3, #3b5998);
+}
+
+.form-control, .form-control-file {
+    border-radius: 0;
+    border: 2px solid #343a40;
+}
+
+.list-group-item {
+    background-color: #e9ecef;
+    border: 1px solid #343a40;
+    color: #343a40;
+}
+
+.list-group-item:hover {
+    background-color: #ced4da;
+}
+
+input::placeholder {
+    color: #6c757d;
+}
+

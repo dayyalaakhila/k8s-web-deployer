@@ -1,0 +1,7 @@
+# Ignore the Dockerfile itself
+Dockerfile
+
+# Ignore node_modules and any other unwanted files
+node_modules
+npm-debug.log
+.git
